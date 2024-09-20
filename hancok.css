@@ -1788,7 +1788,7 @@ i[class="fa-sharp fa-solid fa-chevron-left fa-beat"] {
 }
 
 .copyright__website {
-    font-family: Barlow Condensed;
+    font-family: var(--primary-font-family);
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
