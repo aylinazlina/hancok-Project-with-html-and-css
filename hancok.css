@@ -1,0 +1,1723 @@
+/* ------------- google fonts gupter ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* =============== common css ======== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+br,
+p,
+span,
+section,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+
+}
+
+:root {
+    --background-color-onetwo: #121212;
+    --background-color-oneNine: #191919;
+    --footer-color: #666666;
+    --hover-color: #FF4655;
+    --white-color: #FFFFFF;
+    --primary-font-family: "Barlow Condensed", sans-serif;
+    --secondary-font-family: "Oswald", sans-serif;
+}
+
+/* =============== common css ======== */
+/* =============== navbar css ======== */
+
+.navbar {
+    padding: 22px 0;
+    position: relative;
+    /* margin: auto; */
+    z-index: 10;
+
+
+}
+
+.navbarWrapperFull {
+    display: flex;
+    position: relative;
+}
+
+.NavbarMiddle,
+.NavUl {
+    display: flex;
+    column-gap: 30.01px;
+    padding-left: 60.01px;
+    align-items: center;
+
+}
+
+.NavUlLi___Item {
+    font-family: var(--secondary-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #DDDDDD;
+    cursor: pointer;
+
+}
+
+.NavUlLi___Item:hover {
+    color: var(--hover-color);
+}
+
+.NavbarRight {
+    display: flex;
+    color: var(--white-color);
+    column-gap: 18px;
+    right: 0;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.SignIn {
+    display: flex;
+    column-gap: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    width: 61.01px;
+    height: 24px;
+    align-items: center;
+}
+.SignIn:hover{
+    color: var(--hover-color);
+    
+}
+
+i[class="fa-solid fa-right-from-bracket fa-beat-fade"] {
+    width: 14px;
+    height: 14px;
+}
+
+i[class="fa-sharp fa-solid fa-globe fa-beat"],
+i[class="fa-sharp fa-solid fa-magnifying-glass"] {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+i[class="fa-sharp fa-solid fa-globe fa-beat"]:hover{
+    color: var(--hover-color);
+}
+i[class="fa-sharp fa-solid fa-magnifying-glass"]:hover{
+    color: var(--hover-color);
+}
+
+/* =============== navbar css ======== */
+/* =============== banner css ======== */
+.bannerPart {
+
+    padding: 280px 0 0px;
+    background: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+
+
+
+}
+
+.bannerContentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 5px;
+    padding-top: 50px;
+    width: 611px;
+    height: 304px;
+    position: absolute;
+}
+
+.bannerContent__text {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+}
+
+.bannerContent__Title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 89px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 611px;
+    height: 88px;
+    position: relative;
+    padding-top: 5px;
+
+    /* background-color: #FF4655; */
+}
+
+.bannerContent__summary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 521px;
+    height: 72px;
+    padding-bottom: 48px;
+
+}
+
+.bannerContent__Title::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: white;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+
+
+}
+
+.banner__button {
+
+    width: 128px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--background-color-onetwo);
+    cursor: pointer;
+}
+
+.banner__button:hover {
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
+
+
+.bannerContent__summaryAndbuttonWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+
+
+i[class="fa-solid fa-angles-right"] {
+    width: 13px;
+    height: 13px;
+
+}
+
+/* i[class="fa-brands fa-facebook-f fa-beat"]{
+    color: var(--white-color);
+} */
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+
+    background-color: var(--white-color);
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+
+    height: 100%;
+
+
+
+}
+.icon:hover{
+    background-color:var(--hover-color) ;
+    color: var(--white-color);
+}
+
+.bannerbottomWrapper {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    bottom: 104px;
+    display: flex;
+
+    column-gap: 20px;
+
+}
+
+
+
+
+
+/* =============== banner css ======== */
+/* =============== hancokCommunity css ======== */
+
+
+.CommunityPart {
+    padding-top: 1100px;
+    padding-bottom: 100px;
+    background-color: var(--background-color-onetwo);
+
+}
+
+
+
+.communitytopper__title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+
+    position: relative;
+    width: 518px;
+    height: 112px;
+}
+
+.communitytopper__title::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    left: 40%;
+    bottom: 10%;
+}
+
+
+
+.CommunityImage {
+    width: 700px;
+    height: 400px;
+
+}
+
+.CommunityLeft {
+    position: relative;
+
+}
+
+.CommunityLeft::before {
+    position: absolute;
+    content: "";
+    width: 163px;
+    height: 7px;
+    background-color: var(--hover-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.CommunityLeft::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 163px;
+    background-color: var(--hover-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.CommunityLeft__text {
+    display: flex;
+    column-gap: 10px;
+}
+
+.CommunityLeftandRightfull {
+    display: flex;
+    column-gap: 82px;
+}
+
+.CommunityRight {
+    max-width: 467px;
+    max-height: 403px;
+}
+
+.CommunityRight__title {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color, #ffff);
+    max-width: 413px;
+    max-height: 40px;
+
+}
+
+.CommunityLeft__textWrapper {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    padding-top: 7px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.CommunityLeft__Summary {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--white-color);
+    font-family: var(--secondary-font-family);
+    padding-bottom: 30px;
+}
+
+.--Community {
+    color: var(--white-color);
+    background-color: #212121;
+    border: 2px solid #000000;
+
+}
+
+i[class="fa-duotone fa-solid fa-check"] {
+    color: #FF4655;
+}
+
+.CommunityTopWrapperFull {
+    display: flex;
+    flex-direction: column;
+    row-gap: 57px;
+}
+
+.CommunityBottomCard {
+    width: 315px;
+    height: 170px;
+    background-color: #212121;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+}
+
+
+.CommunityBottomCard__title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+
+
+}
+
+i[class="fa-sharp fa-solid fa-circle"] {
+    color: var(--hover-color);
+    bottom: 15%;
+    right: 2%;
+    position: absolute;
+}
+
+.CommunityBottomCard__titleAndCircleWrapper {
+    display: flex;
+
+    position: relative;
+    width: 110px;
+    height: 72px;
+
+}
+
+.CommunityBottomCard__Summary {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 123px;
+    height: 27px;
+}
+
+.CommunityBottomCard__ContentWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    position: absolute;
+    width: 125px;
+    height: 117px;
+    padding: 26px 90px 27px 100px;
+
+
+
+}
+
+.CommunityBottomAllCardWrapper {
+    display: flex;
+    column-gap: 20px;
+    padding-top: 51px;
+}
+
+
+/* =============== hancokCommunity css ======== */
+/* =============== POPULARGAMES css ======== */
+
+.POPULARGAMES {
+    background-color: var(--background-color-oneNine);
+    padding: 100px 0;
+}
+
+.POPULARGAMES__title {
+    width: 445px;
+    height: 100px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+
+    text-align: right;
+
+
+
+}
+
+.POPULARGAMES__title::after{
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    right: 8%;
+    bottom: 49%;
+}
+
+.POPULARGAMES__bottomRight {
+    width: 651px;
+    height: 390px;
+    background: url(../images/PopularGamesImageRight.png);
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+.POPULARGAMES__bottomLeft {
+
+
+    width: 651px;
+    height: 390px;
+    background-color: var(--hover-color);
+    position: relative;
+
+    bottom: 0;
+    /* clip-path: polygon(16% 0, 100% 0%, 84% 100%, 0% 100%); */
+    transform: skew(-13deg, 0deg);
+
+
+
+}
+
+.POPULARGAMES__bottomLeftOuterRectangel {
+
+
+
+
+    width: 493px;
+    height: 605px;
+    /* background-color: black; */
+    background: url(../images/POPULARGAMESbottomLeftImage.png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+
+
+}
+
+.POPULARGAMES__bottomLeftAndRightWrapper {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.POPULARGAMES__titleWrapper {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+i[class="fa-sharp fa-solid fa-chevron-right fa-beat"],
+i[class="fa-sharp fa-solid fa-chevron-left fa-beat"] {
+    color: var(--white-color);
+    width: 8.07px;
+    height: 12.5px;
+
+}
+
+.POPULARGAMES__bottomRight__AngleCircle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    text-align: center;
+    height: 100%;
+
+
+
+
+}
+
+.POPULARGAMES__bottomRight__AngleCircleLWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+
+    position: absolute;
+    right: 10px;
+    bottom: 22px;
+
+
+}
+.POPULARGAMES__bottomRight__AngleCircle:hover{
+    background-color: var(--hover-color);
+}
+
+/* =============== POPULARGAMES css ======== */
+/* =============== LiveVideo css ======== */
+.LiveVideo {
+    padding: 100px 0;
+    background-color: var(--background-color-onetwo);
+}
+
+.LiveVideo__TopTitleWrapper {
+    width: 446px;
+    height: 110.18px;
+
+
+}
+
+.LiveVideo__TopTitle {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    position: relative;
+
+}
+
+.LiveVideo__TopTitle::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    bottom: 10%;
+    right: 40%;
+
+
+
+}
+
+.LiveVideo__ImageWrapper {
+    width: 427px;
+    height: 275.46px;
+    position: relative;
+
+}
+
+.VideoImage {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.second--image {
+    filter: grayscale(0);
+}
+
+.Overlay {
+    width: 427px;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.PlayButton {
+    font-size: 70px;
+    position: absolute;
+    top: 32%;
+    left: 42%;
+    color: var(--white-color);
+}
+
+.Overlay__Right {
+    position: relative;
+}
+
+.Overlay__Right::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    top: 20%;
+    right: 132%;
+
+}
+
+.OverlayContentWrapper {
+
+    display: flex;
+
+    bottom: 0;
+    position: absolute;
+    padding: 23px 27px;
+    column-gap: 172px;
+
+
+}
+
+.Overlay__LeftTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+
+
+
+}
+
+.Overlay__LeftSummary {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+
+
+}
+
+.Overlay__RightTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+}
+
+.LiveVideo__ImageWrapperFull {
+    display: flex;
+    column-gap: 29px;
+    padding-top: 78.82px;
+}
+
+.MatchOne {
+    width: 426px;
+    height: 118.5px;
+    background-color: #212121;
+    clip-path: polygon(0 0, 100% 0%, 86% 100%, 0% 100%);
+    display: flex;
+    column-gap: 120px;
+    padding: 10px 5px;
+
+
+
+}
+
+.MatchTwo {
+
+    width: 426px;
+    height: 118.5px;
+    background-color: #212121;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 100%);
+    display: flex;
+    column-gap: 140px;
+    padding: 10px;
+    padding-left: 42px;
+
+
+
+
+
+}
+
+.MatchOne__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    padding-top: 28.9px;
+}
+
+.MatchOneAndTwoWrapper {
+    display: flex;
+    column-gap: 80px;
+    padding: 0 100px;
+
+
+}
+
+.MatchOneAndTwo__time {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    padding: 35px 0;
+
+}
+
+.MatchOneAndTwoWrapperFull {
+    display: flex;
+    flex-direction: column;
+    row-gap: 58.56px;
+    padding-top: 50px;
+}
+
+.LiveVideo__BottomTiltle {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    padding-top: 52px;
+    padding-left: 562px;
+}
+.MatchOne:hover{
+    background-color: var(--hover-color);
+
+}
+
+.MatchTwo:hover{
+    background-color: var(--hover-color);
+}
+/* =============== LiveVideo css ======== */
+/* =============== GamingAccesoires css ======== */
+.GamingAccesoires {
+    padding: 100px 0;
+    background-color: var(--background-color-onetwo);
+
+}
+
+.GamingAccesoires__TopTitleWrapper {
+    width: 446px;
+    height: 110.18px;
+    /* background-color: blue; */
+}
+
+.GamingAccesoires__TopTitle {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    position: relative;
+}
+
+.GamingAccesoires__TopTitle::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    bottom: 10px;
+    right: 120px;
+
+
+}
+
+.GamingAccesoires__Card {
+    width: 315px;
+    height: 465px;
+    background-color: #212121;
+
+}
+.GamingAccesoires__Card:hover{
+   transform: translateY(-10%);
+}
+
+.GamingAccesoires__CardContentWrapper {
+    width: 240px;
+    height: 419px;
+    padding: 32px 37px 5px 37px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+
+
+}
+
+.GamingAccesoires__CardPrice {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 59px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    padding-left: 80px;
+}
+
+.GamingAccesoires__Image {
+    width: 240px;
+    height: 240px;
+
+}
+
+.GamingAccesoires__Name {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 183px;
+    height: 37px;
+    padding-top: 45px;
+
+}
+
+.GamingAccesoires__Cart {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--hover-color);
+    bottom: 0;
+
+    padding-left: 42px;
+    padding-top: 27px;
+    text-transform: uppercase;
+
+}
+
+.GamingAccesoires__NameAndCartWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 75px;
+    padding-left: 28px;
+    bottom: 0;
+    position: absolute;
+}
+
+.GamingAccesoires__CardWrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.GamingAccesoiresCircleAndIconWrapper {
+    width: 50px;
+    height: 50px;
+    position: relative;
+
+
+}
+
+.GamingAccesoiresCircle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    position: absolute;
+    top: 490%;
+    left: -10px;
+
+
+}
+.GamingAccesoiresCircle:hover{
+    background-color: var(--hover-color);
+}
+
+.GamingAccesoiresCircle_Right--Angle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    position: absolute;
+    right: -1290px;
+    top: 590%;
+
+}
+
+.GamingAccesoiresCircle_Right--Angle:hover{
+    background-color: var(--hover-color);
+}
+
+
+
+/* =============== GamingAccesoires css ======== */
+/* =============== EliteTeam css ======== */
+.EliteTeam {
+    padding: 100px 0;
+    background-color: var(--background-color-oneNine);
+}
+
+.EliteTeamTitle {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    letter-spacing: 7%;
+    position: relative;
+    text-align: right;
+}
+
+.EliteTeamTitleWrapper {
+    width: 495px;
+    height: 100px;
+
+
+    position: absolute;
+    right: 100px;
+
+    padding-bottom: 50px;
+
+}
+
+.EliteTeamTitle::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    bottom: 13%;
+    right: 16%;
+
+}
+
+.EliteTeamImage {
+    width: 650px;
+    height: 428.35px;
+    position: relative;
+}
+
+.EliteTeamImage:hover .EliteTeam__OverlayMain{
+    visibility: hidden;
+} 
+.EliteTeamImage:hover .EliteTeam__OverlaySecondary{
+    top: 52%;
+    visibility: visible;
+}
+.EliteTeam__OverlaySecondary {
+    width: 100%;
+    height: 49%;
+
+    background-color: #25242480;
+    top:80%;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.EliteTeam__OverlayLeftWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 300px;
+}
+
+.EliteTeam__OverlayTopTitle {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+}
+
+.EliteTeam__OverlayTopSummary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 300px;
+    height: 47.82px;
+
+
+}
+
+.icon__Elite--Team {
+
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+
+
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+
+    height: 100%;
+
+
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
+
+.Button__Elite--Team {
+    width: 105px;
+    height: 32.66px;
+    border: none;
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
+
+.EliteTeam__OverlayRightWrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    column-gap: 20px;
+    right: -50%;
+    bottom: 12%;
+
+}
+
+.EliteTeam__OverlayContentWrapper {
+    display: flex;
+    column-gap: 117px;
+    position: absolute;
+    bottom: 0;
+    padding: 40px 30px 30px 58px;
+
+}
+
+.EliteTeamImageWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.EliteTeamImageWrapperTwo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+
+}
+
+.EliteTeam__OverlayMain {
+
+    width: 100%;
+   
+
+    background-color: #25242480;
+   
+    left: 0;
+    position: absolute;
+
+    bottom: 0;
+    height: 22%;
+}
+
+/* =============== EliteTeam css ======== */
+/* =============== BlackFridaySale css ======== */
+
+.BlackFridaySale {
+    padding: 100px 0;
+    background-color: var(--background-color-oneNine);
+}
+
+
+.BlackFridaySale__title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    font-family: var(--primary-font-family);
+    letter-spacing: 7%;
+    color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.BlackFridaySale__titleWrapper {
+
+    width: 449px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    text-align: right;
+
+
+}
+
+.BlackFridaySale__title::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    right: 80px;
+    bottom: 20px;
+
+
+}
+
+.BlackFridaySaleImageWrapper {
+    width: 315px;
+    height: 430px;
+}
+
+.BlackFridaySaleImage {
+    width: 100%;
+    height: 100%;
+}
+
+.BlackFridaySale__Price {
+    display: flex;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+
+.BlackFridaySale__ImageTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    padding-top: 28px;
+}
+
+.BlackFridaySale__ImageTitleTwo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    letter-spacing: 10%;
+    color: #666666;
+    padding-top: 20px;
+}
+
+.BlackFridaySale__PriceSale {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 40px;
+    height: 30px;
+    background-color: var(--hover-color);
+    text-align: center;
+    height: 100%;
+
+
+}
+
+.BlackFridaySale__PricePrevious {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: #666666;
+    width: 46px;
+    height: 24px;
+    position: relative;
+}
+
+.BlackFridaySale__PricePrevious::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #666666;
+    top: 15px;
+    left: 0;
+
+
+}
+
+.BlackFridaySale__PriceNow {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+
+}
+
+.BlackFridaySaleTopContentWrapper {
+    width: 316px;
+    height: 568px;
+    /* background-color: blue; */
+}
+
+.BlackFridaySaleTopContentWrapperFull {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+
+.BlackFridaySaleBottomTitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--primary-font-family);
+    color: #FFFFFF;
+}
+
+.BlackFridaySaleBottomTitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    padding: 80px 0;
+
+}
+
+.BlackFridaySale__BottomLeftTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: #FF4655;
+    padding-bottom: 15px;
+}
+
+.BlackFridaySale__BottomLeftTitleSecond {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 580px;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.BlackFridaySale__BottomLeftSummary {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: #666666;
+    width: 601px;
+    height: 48px;
+
+
+}
+
+.BlackFridaySale__BottomLeftButton {
+    width: 128px;
+    height: 50px;
+    background-color: var(--background-color-onetwo);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+
+}
+.BlackFridaySale__BottomLeftButton:hover{
+    background-color: var(--hover-color);
+
+}
+
+.BlackFridaySale__BottomLeftWrapper {
+    /* background-color: antiquewhite; */
+    width: 601px;
+    height: 278px;
+    position: relative;
+
+
+
+}
+
+.BlackFridaySale__BottomRightWrapper {
+    width: 426px;
+    height: 370px;
+    /* background-color: var(--hover-color); */
+    position: relative;
+
+}
+
+.Catalog__One {
+    width: 210px;
+    height: 305px;
+    /* background-color: green; */
+    left: 0;
+    top: 10%;
+
+    position: absolute;
+}
+
+.Catalog__Two {
+    width: 210px;
+    height: 305px;
+    /* background-color:blue; */
+    right: 0;
+    top: 10%;
+
+    position: absolute;
+}
+
+.Catalog__Three {
+    width: 220px;
+    height: 330px;
+    /* background-color:grey; */
+    left: 10%;
+    top: 5%;
+
+
+    position: absolute;
+}
+
+.Catalog__Four {
+    width: 220px;
+    height: 330px;
+    /* background-color:red; */
+    right: 10%;
+    top: 5%;
+
+
+    position: absolute;
+}
+
+.Catalog__Five {
+    width: 259px;
+    height: 370px;
+    /* background-color: greenyellow; */
+    top: 0;
+    left: 20%;
+    transform: translate(-50, -50%);
+    position: absolute;
+}
+
+.BlackFridaySale__BottomContentWrapperFull {
+    display: flex;
+    /* background-color: greenyellow; */
+    column-gap: 136px;
+    position: relative;
+    padding-top: 45px;
+    padding-left: 45px;
+}
+
+.BlackFridaySale__BottomWrapperFull {
+   
+    width: 100%;
+    height: 454px;
+    background-color:#212121;
+
+}
+
+/* =============== BlackFridaySale css ======== */
+/* =============== QuestionAnswer css ======== */
+
+.QuestionAnswer{
+    padding: 100px 0 200px 0;
+    background-color:var(--background-color-onetwo);
+
+}
+.QuestionAnswerTopTitle{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+}
+.QuestionAnswerTopTitleWrapper{
+    width: 493px;
+    height: 110px;
+    /* background-color:black; */
+    position: relative;
+}
+.QuestionAnswerTopTitle::after{
+    position: absolute;
+    content: "";
+    width: 128px;
+    height: 5px;
+    background-color: var(--hover-color);
+    bottom: 20%;
+
+
+    
+}
+.QuestionAnswerNumber{
+    width: 70px;
+    height: 70px;
+    background-color: var(--hover-color);
+    color: var(--white-color);
+    text-align: center;
+    /* height: 100%; */
+    line-height: 70px;
+    font-size: 38px;
+    font-weight: 600;
+    font-family: var(--primary-font-family);
+}
+.QuestionAnswer__Question{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+}
+.QuestionAnswer__Question:hover{
+    color:var(--hover-color) ;
+    cursor: pointer;
+}
+
+.QuestionAnswer__Answer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: var(--white-color);
+    width: 426px;
+    height: 72px;
+}
+
+.QuestionAnswercontentWrapper{
+    display: flex;
+    column-gap: 42px;
+}
+.QuestionAnswer__QuestionAndAnswerWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+.QuestionAnswercontentWrapperFirst{
+    display: flex;
+    column-gap: 243px;
+}
+
+.QuestionAnswercontentWrapperFull{
+   display: flex;
+   flex-direction: column;
+   row-gap: 151px; 
+   /* background-color: green;  */
+   padding-top: 92px;  
+   position: relative;
+}
+.QuestionAnswercontentWrapperFull::before{
+    position: absolute;
+    content: "";
+    width: 1320px;
+    height: 2px;
+    background-color:#666666;
+    top: 60%;
+
+
+}
+.QuestionAnswercontentWrapperFull::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 369px;
+    background-color:#666666;
+    left: 50%;
+}
+/* =============== Question&Answer css ======== */
+/* =============== Footer css ======== */
+.Footer{
+    background-color:var(--background-color-oneNine);
+    padding-bottom: 135px;
+    position: relative;
+}
+.Footer__title{
+    font-size: 16px;
+    font-weight:400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color:#666666;
+    width: 450px;
+    height: 76px;
+    padding-top: 31px;
+}
+.footer--icon{
+    bottom: 20%;
+   
+}
+.FooterLeftWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.PicOne{
+    width: 102px;
+    height: 102px;
+    background-color:var(--hover-color);
+
+}
+.GALLERYTop{
+    display: flex;
+    column-gap: 4px;
+}
+.GALLERYBottom{
+    display: flex;
+    column-gap: 4px;
+
+}
+.FooterContentWrapper{
+    display: flex;
+    column-gap: 141px;
+}
+.Footer__RightPictureWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap:5px;
+    padding-top: 35px;
+}
+/* .container{
+    background-color: blueviolet;
+} */
+
+.FooterRightTitle{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+}
+.FooterMiddleItem{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--secondary-font-family);
+    color: #666666;
+    
+}
+.FooterMiddleItem:hover{
+    color: var(--hover-color);
+}
+.FooterRightUl{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.FooterTopper{
+    width: 100%;
+    height: 165px;
+    background-color:var(--hover-color) ;
+    position: relative;
+    top: -98px;
+}
+.FooterTopperTitle{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    text-transform: uppercase;
+    width: 750px;
+    height: 96px;
+    /* background-color: blue; */
+    padding-top: 35px;
+    padding-left: 29px;
+    
+}
+
+.YourEmail{
+    width: 409px;
+    height:40px;   
+    background-color: var(--white-color);
+    right: 16px;
+    top: 40%; 
+    position: absolute;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    font-family:var(--primary-font-family);
+    color:#666666;
+   
+   
+    
+}
+
+.SUBSCRIBE{
+   
+    width: 117px;
+    height: 40px;
+    border-radius: 30px;
+    background-color:var(--background-color-oneNine);
+    right: 10px;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: var(--primary-font-family);
+    color: var(--white-color);
+    text-align: center;
+    top: 40%;
+   
+}
+/* =============== Footer css ======== */
